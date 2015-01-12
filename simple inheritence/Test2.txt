@@ -1,0 +1,30 @@
+// Parent constructor Animal
+function Animal(name) {
+	this.name = name; 
+	this.x = 0;
+}
+
+// Parent prototype getter/setter
+Animal.prototype.getName = function() {
+	return this.name
+};
+Animal.prototype.setName = function(name) {
+	this.name = name
+};
+
+// Child constructor 
+function Dog(name) { 
+	this.setName(name) 
+}
+
+// Child prototype
+Dog.prototype = new Animal();   // inheritence by creation of Animal instance
+Dog.prototype.gav = function() {
+	return 'Dog ' + this.name + ' is saying gav';
+};
+
+var dog = new Dog('Aban');      // new Object
+console.log(dog.getName() === 'garfield'); // false
+console.log(dog.gav() === 'Dog Aban is saying gav'); // true
+console.log(dog.x); // 0
+	

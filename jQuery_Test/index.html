@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mathematics</title>
+
+    <!-- Bootstrap -->
+    <link href="bootstrap.min.css" rel="stylesheet">
+	<link href="style.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+  </head> 
+  <body> 
+   <!-- Начало приложения --> 
+    <div class="container" id="test">
+        <div class="row">
+            <div class="col-sm-12">
+               <!-- Информационный блок -->
+                <h2 id="heading"> Это тест на знание математики </h2>
+                   <p id="main" class="bg-info"> Это небольшой тест на знание простейших арифметических операций. <br /> <br />
+                                   В левом окне появляется пример, а в правом нужно ввести ответ. <br /> <br /> 
+                                   В окне "Проверка" можно посмотреть результат, а в окне "Установка" - выбрать какие будут арифметические операции.</p>
+                   <p id="main" class="bg-danger"> ВАЖНО! При задачах на деление округляйте до целой части по обычным правилам математики!</p>
+				   <!-- Начало полей -->                   
+                   <input type="text" id="question" placeholder="Тут будет вопрос" readonly/> 
+                   <input type="text" id="answer" placeholder="Тут пиши ответ" readonly/>
+                   <!-- Счетчик и кнопка "Дальше" -->
+                   <p id="test-number" class="bg-info pull-left">Задание №: <span id="counter">0</span> из 5 </p>
+                   <a title="Next test" class="btn btn-info pull-right" id="next">Начать</a>
+                   <!-- Табы "Проверка" и "Управление" -->
+					<div class="tabbable">
+						<ul class="nav nav-tabs">
+							<li class="active"><a href="#tab1" data-toggle="tab">Проверка</a></li>
+							<li><a href="#tab2" data-toggle="tab">Установка</a></li>
+						</ul>
+						<div class="tab-content">
+							<div class="tab-pane active" id="tab1">
+								<p id='infop' class='text-info bg-info'>Тут появится информация о результатах</p>
+								<a id="okay" class="btn btn-success">Согласен!</a>
+							</div>
+							
+							<div class="tab-pane checkboxes" id="tab2">
+							<table>
+								<tr><td><input style="margin-right: 30px" type="checkbox" name="option1" value="+" checked><span id="op">Сумма значений</span><br /></td>
+                                    <td><input type="checkbox" name="option2" value="-" checked><span id="op">Разница значений</span><br /></td></tr>
+                                <tr><td><input type="checkbox" name="option3" value="*" checked><span id="op">Умножение значений</span><br /></td>
+                                    <td><input type="checkbox" name="option4" value="/" checked><span id="op">Деление значений</span><br /></td></tr>
+                            </table>
+                            <a title="submit" class="btn btn-info" id="checkbox-submitter">Подтвердить</a>
+                            <a title="refresh" class="btn btn-warning" id="checkbox-refresher">Обновить</a>
+                            </div>
+						</div>
+					</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bootstrap.min.js"></script>
+	<script src="script.js"></script>
+	<script src="scroll.js"></script>
+  </body>
+</html>

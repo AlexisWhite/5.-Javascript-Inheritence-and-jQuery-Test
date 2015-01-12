@@ -1,0 +1,82 @@
+#test {
+    margin: 1% auto; 
+    text-align: center;
+    width: 400px;
+    background-color: #B1C8D5;
+    padding-top: 15px;
+    border-radius: 15px;
+}    
+
+#heading {
+    color: #01273A;
+    font-size: 150%;
+    padding-bottom: 15px;
+}
+
+#main {
+    text-align: left;
+    margin: 0 5% 5% 5%;
+    padding: 15px 15px; 
+    border-radius: 15px;
+}
+
+#test-number {
+    margin: 3.5% 5%;
+    padding: 6.5px 15px; 
+    border-radius: 15px;
+}
+
+#next {
+    margin: 3% 5%;   
+}
+
+.tabbable {
+    margin-left: 2%;
+    clear: both;    
+}
+
+.tab-pane {
+    padding: 15px 0;    
+}
+
+td {
+    width: 40%;
+    margin-left: 15px;
+}
+
+#op {
+    margin-left: 15px;   
+    vertical-align: top;
+}
+
+#checkbox-submitter {
+    margin: 15px 15px; 
+    float: right;
+}
+
+#checkbox-refresher {
+    display: none;
+    float: left;
+    margin: 15px 0;
+}
+
+#okay {
+    display: none;        
+}
+
+#successp, #wrongp, #endp, #infop {
+    display: block;
+    border-radius: 5px;    
+}
+
+#infop {
+    margin-top: 10px;    
+}
+
+.ask {
+    margin-left: 25px;    
+}
+
+.said {
+    margin-right: 60px;    
+}
